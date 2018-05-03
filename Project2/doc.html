@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <meta charset=utf-8>
+    <title>Project 2 Documentation</title>
+  </head>
+  <body>
+    <h2>Project 2 Documentation</h2>
+    <p>I spent a lot of time trying to research how I could port this to work in an OpenGl canvas. Unfortunately, despite my best efforts, I don't think it is possible with the format we had been using. The way I built this algorithm is more complex than simply working with RGBA values. Each cell is treated like an object and has far more variables than the shaders would allow me to use. Even if I were to limit it's coloring to just two colors and try to work with the extra values, it would not be enough. The only way to achieve that goal would be to figure out how to treat pixels like an object, create objects of my own or fundamentally rework how I built my system to work with the limitation of shaders. Unfortunately I ran out of time due to other work and projects and ultimately had to give up on this endeavor. I'm disappointed at the way this project went and wished I had more time to work on it but the circumstances didn't allow me to. 
+    </p>
+      
+    <p>The only things I managed to spend time on were ways to try and improve what I already had. I reworked the pathfinding and growth model a bit to try and make it seem more organic and calculated as opposed to the randomness I had before. The growth is also a bit more dynamic. Cells that are seeking food grow faster and will try and expand past their limitations when possible. The growth limitation also changes dynamically based on how many cells are alive at the moment, allowing it to try and expand exponentially. The growth limits themselves got tweaked so that they didn't just form circles all the time. I also added a few more user controlled elements such as food count and growth limits. Finally I added the ability to plop down random seeds so that if the growth couldn't expand anymore due to it's limitations the user can manipulate it themselves. 
+      
+    </p>
+  </body>
+</html>
